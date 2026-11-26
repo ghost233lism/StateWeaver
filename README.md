@@ -2,7 +2,7 @@
 
 <h1>StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation</h1>
 
-[**Modi Jin**](https://ghost233lism.github.io/)<sup>1</sup> · [**Xuying Zhang**](https://zhangxuying1004.github.io/)<sup>2,1</sup> · [**Yijing Guo**](https://scholar.google.com/citations?user=EuOmru0AAAAJ)<sup>3</sup> · [**Haoran Li**](https://jahnsonblack.github.io/)<sup>2</sup> · [**Yanwen Ma**](https://gelercat.com/)<sup>4</sup> · [**Jing Wang**](https://openreview.net/profile?id=~Jing_Wang145)<sup>1</sup> · [**Chenyu Ge**](https://openreview.net/profile?id=~Chenyu_Ge1)<sup>1</sup> · [**Ming-Ming Cheng**](https://mmcheng.net/cmm/)<sup>1</sup> · [**Haoyang Huang**](https://hhyhhyhy.github.io/)<sup>2</sup>
+[**Modi Jin**](https://ghost233lism.github.io/)<sup>1</sup> · [**Xuying Zhang**](https://zhangxuying1004.github.io/)<sup>2,1</sup> · [**Yijing Guo**](https://scholar.google.com/citations?user=EuOmru0AAAAJ)<sup>3</sup> · [**Haoran Li**](https://jahnsonblack.github.io/)<sup>2</sup> · [**Yanwen Ma**](https://gelercat.com/)<sup>4</sup> · [**Jing Wang**](https://openreview.net/profile?id=~Jing_Wang145)<sup>1</sup> · [**Chenyu Ge**](https://openreview.net/profile?id=~Chenyu_Ge1)<sup>1</sup> · <br>[**Ming-Ming Cheng**](https://mmcheng.net/cmm/)<sup>1</sup> · [**Haoyang Huang**](https://hhyhhyhy.github.io/)<sup>2</sup>
 
 <sup>1</sup> Nankai University · <sup>2</sup> Joy Future Academy, JD · <sup>3</sup> ShanghaiTech University · <sup>4</sup> Beihang University
 
