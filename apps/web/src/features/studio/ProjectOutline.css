@@ -1,0 +1,9 @@
+.studio-project-outline { position: relative; width: var(--outline-width, 232px); min-height: 0; padding: 0; overflow: visible; }
+.studio-outline-scroll { height: 100%; overflow-y: auto; overscroll-behavior: contain; padding: 24px 12px; }
+.studio-outline-resize { position: absolute; z-index: 6; top: 0; bottom: 0; right: -6px; width: 12px; display: flex; align-items: center; justify-content: center; cursor: ew-resize; touch-action: none; user-select: none; color: var(--studio-secondary); }
+.studio-outline-resize::before { content: ''; position: absolute; inset: 0 5px; }
+.studio-outline-resize > svg { position: relative; flex-shrink: 0; height: 32px; width: 14px; padding: 2px 0; border: 1px solid var(--studio-line); border-radius: 4px; background: var(--studio-surface); }
+.studio-outline-resize:hover, .studio-outline-resize:focus-visible, .studio-project-outline.is-resizing .studio-outline-resize { color: var(--studio-accent); }
+.studio-outline-resize:hover::before, .studio-outline-resize:focus-visible::before, .studio-project-outline.is-resizing .studio-outline-resize::before { background: var(--studio-accent); }
+.studio-outline-resize:focus-visible { outline: 2px solid var(--studio-accent); outline-offset: 0; }
+.studio-project-outline.is-resizing { user-select: none; }

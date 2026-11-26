@@ -1,0 +1,29 @@
+.studio-audio { display: block; width: 100%; min-width: 0; margin: 12px 0; }
+.studio-voice-reference { border-top: 1px solid var(--studio-line); padding-top: 20px; margin: 20px 0; }
+.studio-voice-reference h3 { display: flex; align-items: center; gap: 9px; }
+.studio-voice-history details { border-top: 1px solid var(--studio-line); padding: 12px 0; }
+.studio-voice-history summary { cursor: pointer; }
+.studio-quality-heading { display: flex; align-items: center; gap: 12px; justify-content: space-between; flex-wrap: wrap; }
+.studio-quality-heading label { display: flex; gap: 8px; align-items: center; font-size: var(--studio-type-meta); }
+.studio-quality-heading select { color: var(--studio-ink); background: var(--studio-surface); border: 1px solid var(--studio-line); border-radius: 6px; padding: 6px; }
+.studio-comparison-table { max-width: 100%; overflow-x: auto; border: 1px solid var(--studio-line); border-radius: 8px; }
+.studio-comparison-table table { border-collapse: collapse; min-width: 100%; font-size: var(--studio-type-ui); }
+.studio-comparison-table :is(th, td) { text-align: left; vertical-align: top; padding: 12px; min-width: 135px; max-width: 220px; border-bottom: 1px solid var(--studio-line); overflow-wrap: anywhere; }
+.studio-comparison-table thead th { background: var(--studio-canvas); }
+.studio-comparison-table tbody th { min-width: 155px; font-weight: 500; }
+.studio-comparison-table :focus-visible { outline: 2px solid var(--studio-accent); outline-offset: -2px; }
+.studio-compromise-notice { background: var(--av-warning-soft); border-left: 3px solid var(--av-warning); border-radius: 6px; padding: 16px; margin: 20px 0; }
+.studio-compromise-notice h3 { color: var(--av-warning, #a86108); }
+.studio-compromise-notice h4 { margin-top: 10px; }
+.studio-compromise-notice ul { margin: 6px 0; padding-left: 22px; }
+.studio-repair-plan dl > div { margin: 12px 0; }
+.studio-repair-plan dt { font-weight: 600; }
+.studio-repair-plan dd { margin: 4px 0; }
+.studio-quality-decision, .studio-clip-state, .studio-timed-references article { padding: 14px 0; border-bottom: 1px solid var(--studio-line); }
+.studio-quality-decision .studio-markdown { margin-top: 4px; }
+.studio-status--escalated, .studio-status--repair { color: var(--av-warning, #a86108); }
+.studio-secondary { color: var(--studio-secondary); }
+@media (max-width: 760px) {
+  .studio-comparison-table :is(th, td) { min-width: 120px; padding: 10px; }
+  .studio-compromise-notice { padding: 12px; }
+}

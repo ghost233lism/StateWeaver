@@ -1,0 +1,71 @@
+# Local secrets
+APIKEY.conf
+.env
+.env.*
+!/.env.example
+/provider-registry.local.json
+
+# Local documentation and agent instructions
+/docs/
+/AGENTS.md
+
+# Local regression tests
+/tests/
+/apps/web/vitest.config.ts
+/apps/web/src/test/
+/apps/web/src/features/studio/test-support.ts
+conftest.py
+test_*.py
+*_test.py
+__tests__/
+__mocks__/
+*.test.*
+*.spec.*
+*.fixture.*
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# JavaScript
+node_modules/
+.vite/
+apps/web/dist/
+coverage/
+playwright-report/
+test-results/
+.playwright-cli/
+output/playwright/
+
+# Runtime state and generated media
+output/
+var/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+logs/
+artifacts/
+exports/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Worktrees
+.worktrees/
+
+# Isolated release verification fixtures
+/.verification/

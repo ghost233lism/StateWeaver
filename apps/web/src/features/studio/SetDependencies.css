@@ -1,0 +1,13 @@
+.studio-set-dependencies { min-width: 0; margin: 10px 0; }
+.studio-set-dependencies > .studio-note { margin: 0 0 6px; }
+.studio-handoff-details { min-width: 0; overflow-wrap: anywhere; }
+.studio-handoff-stages, .studio-handoff-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; }
+.studio-handoff-stages { font-size: .86rem; }
+.studio-handoff-item { border-top: 1px solid var(--studio-line); padding: 12px 0; }
+.studio-handoff-item p { margin: 5px 0; }
+.studio-handoff-heading > span, .studio-handoff-item > small { color: var(--studio-secondary); font-size: .8rem; }
+.studio-handoff-heading > span[data-status="ready"] { color: var(--studio-green); }
+.studio-handoff-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 6px 0; }
+.studio-handoff-blockers { border-left: 2px solid var(--studio-dependency); padding-left: 12px; }
+.studio-handoff-blockers h4 { margin: 0 0 6px; }
+.studio-handoff-blockers ul { padding-left: 18px; }

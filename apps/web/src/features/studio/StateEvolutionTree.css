@@ -1,0 +1,44 @@
+.state-evolution-shell { position: relative; display: block; width: 100%; max-width: none; margin: 16px 0; padding: 0; border: 1px solid var(--studio-line); border-radius: 10px; color: var(--studio-ink); background: var(--studio-surface); overflow: hidden; }
+.state-evolution-toolbar { position: relative; z-index: 2; flex: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; padding: 6px 12px; border-bottom: 1px solid var(--studio-line); background: var(--studio-surface); }
+.state-evolution-toolbar h3 { display: flex; gap: 7px; align-items: center; margin: 0; font-size: var(--studio-type-ui); }
+.state-evolution-toolbar h3 span { color: var(--studio-secondary); font-size: var(--studio-type-caption); font-weight: 400; }
+.state-evolution-toolbar > div { display: flex; align-items: center; gap: 2px; }
+.state-evolution-toolbar button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 6px; color: var(--studio-secondary); background: transparent; cursor: pointer; }
+.state-evolution-toolbar button:hover:not(:disabled) { background: var(--studio-muted); color: var(--studio-ink); }
+.state-evolution-toolbar output { min-width: 38px; text-align: center; color: var(--studio-secondary); font-size: var(--studio-type-caption); font-variant-numeric: tabular-nums; }
+.state-evolution-viewport { position: relative; height: 400px; min-width: 0; overflow: hidden; overscroll-behavior: contain; touch-action: none; contain: layout paint; background-color: var(--studio-canvas); background-image: radial-gradient(var(--studio-line) .8px, transparent .8px); background-size: 18px 18px; cursor: grab; }
+.state-evolution-viewport[data-panning] { cursor: grabbing; }
+.state-evolution-viewport:focus-visible, .state-evolution-toolbar button:focus-visible, .state-evolution-exit:focus-visible, .state-evolution-node:focus-visible { outline: 2px solid var(--studio-accent); outline-offset: -2px; }
+.state-evolution-scene { position: absolute; inset: 0 auto auto 0; transform-origin: 0 0; will-change: transform; }
+.state-evolution-notice { position: relative; z-index: 1; padding: 8px 12px; background: var(--studio-surface); }
+.state-evolution-scene > svg { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.state-evolution-scene > svg path { fill: none; stroke: var(--studio-secondary); stroke-width: 1.6; stroke-linejoin: round; opacity: .6; }
+.state-evolution-scene > svg path[data-indirect] { stroke-dasharray: 7 5; }
+.state-evolution-node { position: absolute; display: flex; flex-direction: column; gap: 5px; padding: 7px; text-align: left; color: var(--studio-ink); background: var(--studio-surface); border: 1px solid var(--studio-line); border-radius: 8px; cursor: pointer; box-sizing: border-box; user-select: none; }
+.state-evolution-node[aria-pressed='true'] { border: 2px solid var(--studio-accent); padding: 6px; }
+.state-evolution-node:hover { border-color: var(--studio-secondary); }
+.state-evolution-picture { display: flex; width: 100%; height: 112px; flex-shrink: 0; align-items: center; justify-content: center; background: var(--studio-muted); border-radius: 4px; overflow: hidden; }
+.state-evolution-picture img { display: block; min-width: 0; min-height: 0; width: 100%; height: 100%; object-fit: contain; }
+.state-evolution-picture > span { display: flex; flex-direction: column; gap: 5px; align-items: center; color: var(--studio-secondary); font-size: 11px; }
+.state-evolution-node strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; line-height: 18px; }
+.state-evolution-node small { font-size: 11px; line-height: 15px; color: var(--studio-secondary); }
+.state-evolution-inspector { border-top: 1px solid var(--studio-line); padding: 16px; min-width: 0; }
+.state-evolution-inspector > h3 { margin: 0 0 8px; overflow-wrap: anywhere; }
+.state-evolution-inspector .studio-state-description { margin: 0 0 16px; font-size: var(--studio-type-meta); line-height: 1.7; color: var(--studio-secondary); }
+.state-evolution-inspector .studio-revision > summary small { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.state-evolution-shell.is-fullscreen { position: fixed; inset: 0; width: calc(100vw - 48px); height: calc(100dvh - 48px); max-width: 100vw; max-height: 100dvh; margin: auto; display: flex; flex-direction: column; box-sizing: border-box; }
+.state-evolution-shell.is-fullscreen .state-evolution-toolbar { padding-right: 64px; min-height: 58px; }
+.state-evolution-exit { position: absolute; z-index: 5; top: max(7px, env(safe-area-inset-top)); right: max(8px, env(safe-area-inset-right)); display: grid; place-items: center; width: 44px; height: 44px; padding: 0; flex: none; color: var(--studio-ink); background: var(--studio-surface); border: 1px solid var(--studio-line); border-radius: 7px; cursor: pointer; }
+.state-evolution-exit:hover { background: var(--studio-muted); }
+.state-evolution-shell.is-fullscreen::backdrop { background: rgb(23 32 51 / 55%); }
+.state-evolution-shell.is-fullscreen .state-evolution-content { display: flex; flex: 1; min-height: 0; }
+.state-evolution-shell.is-fullscreen .state-evolution-viewport { flex: 1; height: 100%; }
+.state-evolution-shell.is-fullscreen .state-evolution-inspector { width: clamp(300px, 32vw, 440px); overflow: auto; overscroll-behavior: contain; border-top: 0; border-left: 1px solid var(--studio-line); }
+@media (max-width: 760px) {
+  .state-evolution-toolbar { padding: 6px 8px; }
+  .state-evolution-viewport { height: 340px; }
+  .state-evolution-shell.is-fullscreen { width: 100vw; height: 100dvh; border: 0; border-radius: 0; }
+  .state-evolution-shell.is-fullscreen .state-evolution-content { flex-direction: column; overflow: auto; overscroll-behavior: contain; }
+  .state-evolution-shell.is-fullscreen .state-evolution-viewport { flex: none; height: 52dvh; }
+  .state-evolution-shell.is-fullscreen .state-evolution-inspector { width: auto; border-left: 0; border-top: 1px solid var(--studio-line); overflow: visible; }
+}

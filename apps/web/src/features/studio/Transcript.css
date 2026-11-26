@@ -1,0 +1,47 @@
+.studio-transcript .studio-transcript-item { max-width: 70ch; margin-inline: auto; }
+.studio-transcript .studio-transcript-item--user { margin-left: 20px; }
+.studio-transcript .studio-transcript-item > .studio-markdown { font-size: var(--studio-type-body); }
+.studio-transcript .studio-transcript-item--status > .studio-markdown { font-size: var(--studio-type-meta); }
+.studio-activity { border: 1px solid var(--studio-line); border-radius: 8px; padding: 16px 16px 0; overflow: hidden; }
+.studio-activity--compact { padding-bottom: 16px; }
+.studio-activity-heading { display: flex; gap: 8px; align-items: center; }
+.studio-activity-heading > strong { flex: 1; min-width: 0; font-weight: 600; font-size: var(--studio-type-body); overflow-wrap: anywhere; }
+.studio-activity-heading > svg:first-child { color: var(--studio-secondary); }
+.studio-activity--memory_change .studio-activity-heading > svg:first-child,
+.studio-activity--asset_change .studio-activity-heading > svg:first-child { color: var(--studio-accent); }
+.studio-activity .studio-activity-context { color: var(--studio-secondary); font-size: var(--studio-type-meta); margin-top: 9px; overflow-wrap: anywhere; }
+.studio-activity .studio-activity-description { margin-top: 10px; font-size: var(--studio-type-body); }
+.studio-activity .studio-activity-outcome { margin-top: 8px; font-size: var(--studio-type-ui); min-height: 38px; }
+.studio-activity--failed { border-left: 3px solid var(--av-danger, #b63c49); }
+.studio-activity .is-failed { color: var(--av-danger, #b63c49); font-weight: 650; }
+.studio-activity-details { margin: 12px -16px 0; border-top: 1px solid var(--studio-line); }
+.studio-activity-details > summary { padding: 10px 16px; color: var(--studio-secondary); background: var(--studio-canvas); font-size: var(--studio-type-meta); cursor: pointer; }
+.studio-read-operation { border-block: 1px solid var(--studio-line); font-size: var(--studio-type-ui); }
+.studio-read-operation > summary, .studio-read-summary { display: flex; align-items: center; gap: 8px; padding: 10px 4px; list-style: none; color: var(--studio-secondary); }
+.studio-read-operation > summary { cursor: pointer; }
+.studio-read-operation > summary > strong, .studio-read-summary > strong { flex: 1; min-width: 0; font-weight: 500; overflow-wrap: anywhere; }
+.studio-read-operation > summary::-webkit-details-marker,
+.studio-read-group > summary::-webkit-details-marker { display: none; }
+.studio-transcript-read-group { max-width: 70ch; margin: 0 auto 26px; }
+/* Sidebar content uses the user's chosen width throughout a resize gesture. */
+.studio-inspector .studio-transcript-item, .studio-inspector .studio-transcript-read-group { min-width: 0; max-width: none; margin-inline: 0; }
+.studio-inspector .studio-transcript-item--user { margin-left: 20px; }
+.studio-read-group > summary { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px 0; cursor: pointer; list-style: none; font-size: var(--studio-type-meta); color: var(--studio-secondary); }
+.studio-read-group > summary > strong { font-size: var(--studio-type-body); font-weight: 500; }
+.studio-read-group > summary > span { width: 100%; padding-left: 22px; order: 2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.studio-read-group > summary > svg:last-child { margin-left: auto; }
+.studio-read-group[open] > summary > svg:last-child { transform: rotate(180deg); }
+.studio-read-group > article { margin: 0 0 0 21px; }
+.studio-read-group .studio-read-operation { border-bottom: 0; }
+.studio-transcript .studio-pagination { flex-wrap: wrap; }
+.studio-transcript .studio-inline-error > .studio-markdown { min-width: 0; }
+@media (max-width: 520px) {
+  .studio-transcript-container .studio-transcript { padding: 16px 14px 26px; }
+  .studio-activity { padding-inline: 13px; }
+  .studio-activity-details { margin-inline: -13px; }
+  .studio-read-group > article { margin-left: 10px; }
+}
+
+.studio-role-notice { display: grid; gap: 0.5rem; margin-block: 0.5rem; }
+.studio-role-notice ol { margin: 0.5rem 0; padding-inline-start: 1.5rem; }
+.studio-role-partial { color: var(--av-danger, #c83949); font-size: var(--studio-type-meta); }

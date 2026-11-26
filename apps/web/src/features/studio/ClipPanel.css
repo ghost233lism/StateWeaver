@@ -1,0 +1,35 @@
+.studio-inspector-scroll.is-clip-detail { display: flex; flex-direction: column; overflow: hidden; }
+.studio-clip-panel.studio-clip-workspace { padding: 0; min-width: 0; min-height: 0; flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.studio-clip-player-frame { flex-shrink: 0; min-height: 0; overflow: hidden; }
+.studio-clip-player-frame[hidden] { display: none; }
+.studio-clip-player { display: flex; flex-direction: column; height: 100%; min-height: 0; padding: 12px 22px 0; min-width: 0; overflow: hidden; }
+.studio-clip-player > :not(.studio-clip-screen) { flex-shrink: 0; }
+.studio-clip-screen { position: relative; display: flex; flex-direction: column; justify-content: center; flex: 1; min-width: 0; min-height: 0; overflow: hidden; }
+.studio-clip-screen > .studio-playable-media { flex: 1; height: 100%; }
+.studio-clip-player-resize { display: flex; justify-content: center; align-items: center; height: 14px; flex-shrink: 0; cursor: ns-resize; touch-action: none; color: var(--studio-secondary); border-bottom: 1px solid var(--studio-line); }
+.studio-clip-player-resize:hover, .studio-clip-player-resize:focus-visible { color: var(--studio-accent); background: var(--studio-soft); outline: 2px solid var(--studio-accent); outline-offset: -2px; }
+.studio-clip-player-resize.is-collapsed { height: 16px; }
+.studio-clip-player-reopen { display: flex; align-items: center; justify-content: center; width: 64px; height: 16px; padding: 0; border: 0; background: transparent; color: inherit; }
+.studio-clip-player .studio-clip-meta { margin: 0 0 5px; font-size: var(--studio-type-meta); }
+.studio-clip-player .studio-clip-meta > button { margin-left: auto; }
+.studio-clip-viewing { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: var(--studio-type-meta); margin-bottom: 8px; }
+.studio-clip-viewing > span { min-width: 0; overflow-wrap: anywhere; }
+.studio-clip-viewing > button { flex-shrink: 0; }
+.studio-clip-player .studio-video { display: block; width: 100%; max-height: 100%; height: 100%; min-height: 0; object-fit: contain; margin: 0; }
+.studio-clip-player [hidden] { display: none; }
+.studio-clip-video-empty { display: grid; place-content: center; min-height: 100px; padding: 20px; background: var(--studio-canvas); border: 1px solid var(--studio-line); border-radius: 8px; color: var(--studio-secondary); font-size: var(--studio-type-ui); }
+.studio-clip-player .studio-clip-verdict { margin: 8px 0; color: var(--studio-secondary); font-size: var(--studio-type-meta); }
+.studio-clip-latest { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 6px 0; color: var(--av-warning); font-size: var(--studio-type-meta); }
+.studio-tabs.studio-clip-tabs { flex-shrink: 0; display: grid; grid-template-columns: minmax(0, .6fr) repeat(3, minmax(0, 1fr)); gap: 0 10px; padding: 0 22px; }
+.studio-clip-tabs > button { justify-content: center; white-space: nowrap; padding-block: 12px; }
+.studio-clip-tab-content { flex: 1; min-height: 0; min-width: 0; overflow: auto; overscroll-behavior: contain; padding: 18px 22px 30px; scrollbar-gutter: stable; }
+.studio-clip-tab-content > [hidden] { display: none; }
+.studio-clip-tab-content > [role="tabpanel"] { min-width: 0; }
+.studio-clip-tab-content > [role="tabpanel"] > section + section, .studio-clip-tab-content > [role="tabpanel"] > .studio-record { margin-top: 20px; }
+.studio-clip-tab-content > [role="tabpanel"] > section > h3 { margin-bottom: 10px; }
+.studio-clip-tab-content .studio-review-overview { padding: 14px 16px; }
+@media (max-width: 760px) {
+  .studio-clip-player { padding-inline: 14px; }
+  .studio-tabs.studio-clip-tabs { padding-inline: 14px; }
+  .studio-clip-tab-content { padding: 16px 14px 26px; }
+}

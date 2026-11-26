@@ -1,0 +1,6 @@
+.studio-entity-link { color: var(--studio-accent, #5965e8); font: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; overflow-wrap: anywhere; cursor: pointer; }
+.studio-entity-link:hover { text-decoration-thickness: 2px; }
+.studio-entity-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }
+.studio-entity-name { font: inherit; overflow-wrap: anywhere; }
+.studio-entity-link[data-label-state='error'], .studio-entity-name[data-label-state='error'] { color: var(--av-danger, #b63c49); }
+.studio-entity-link[data-label-state='missing'], .studio-entity-name[data-label-state='missing'] { color: var(--studio-secondary, #667085); }

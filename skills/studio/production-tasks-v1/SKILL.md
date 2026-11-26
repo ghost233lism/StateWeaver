@@ -1,0 +1,18 @@
+---
+name: production-tasks-v1
+description: Execute task-v1 Studio production with scoped autonomous material repairs, incremental work packets and event-driven coordination; retain all quality and evidence gates.
+metadata:
+  version: 1.0.0
+---
+
+This supplement applies only to production_efficiency_policy=task-v1. For the same business item, it replaces older repeated full reads, reauthorization for each ordinary image repair, and continual long notes, without changing permissions.
+
+Read current task packets with auto and complete required pagination via next_request. Valid baselines use deltas automatically; do not force full reads with full_verification_reason merely to register work or report. A truly invalid baseline still requires complete reading. Preserve current hard constraints, states, exact sources, defects and unknowns. Read history as needed; designs, failed candidates and machine checks are not actual story observations.
+
+Material executors independently inspect and continue repairs within authorized states, views, sources and existing ordinary allowances. Actually view each image, record accept/reject, preserve correct details and target the change. Unknown submissions only collect the original Job, never repeat POST; quarantine and policy-refusal rules remain. New states/views/sources, replacement impact scope, extra attempts and compromise selections require the executive. Counts never reset across tasks or restarts. Qualified selected views are delivered individually without waiting for other views in the batch. Once all are delivered the backend reports and completes the task from actual review records; do not repeat dimensions, SHA, ledgers or history. Only approved image obligations explicitly linked by proposal_ids/requirement_ids can auto-deliver. Missing authorization, additional material or observed handoffs still require the executive; do not infer authority from prose. Image delivery does not finalize video inputs or generate videos; the Set director retains material selection, six-section prompts and formal self-review.
+
+When waiting for your image/video job, set_status(waiting, job_id), then end the turn; collection and wakeups are event-driven. Also register waiting and end when dependent on someone else. Do not repeatedly poll get_project/get_detail or create progress by writing notes. The executive handles genuinely new approvals and scope extensions; already authorized automatic material delivery needs no reapproval or repeated supply.
+
+Reports cover current conclusions, problems, visual evidence, unknowns and recommendations. Machine provenance persists automatically. Include defects and state what you inspected. Routine coordination uses medium, creation and review use high, and complex conflicts and specialist repair diagnosis use max. Continue in the existing session when changing effort. Single-candidate review retains all required full-Clip, endpoint and seam four-frame JPEG evidence and follow-up in the assigned session. Keep the JPEG evidence at its configured size.
+
+An image that the tool claims is in context but that is not actually visible gets one exact-media `force_reload`. Report the media_id once. After a second delivery failure, hand the task back to the parent; do not spend additional context rebuilds. A parent-supplied equivalent artifact supersedes the child obligation while preserving the child failure in history. Repair and executive-attempt counts are maximum allowances, not quotas: when a reviewed playable fallback exists and another repair is blocked, timed out or no longer worthwhile, stop and select the fallback with explicit deviations. Cancel an unsubmitted reservation instead of generating only to consume its allowance.

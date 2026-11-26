@@ -1,0 +1,4 @@
+.studio-reading-text { min-width: 0; overflow-wrap: anywhere; }
+.studio-reading-text > button { margin-top: 6px; }
+.studio-reading-text .studio-markdown { font-size: inherit; }
+.studio-reading-excerpt > .studio-markdown { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: var(--reading-lines, 6); overflow: hidden; }

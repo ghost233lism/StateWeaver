@@ -1,0 +1,69 @@
+.studio-candidate-references { container-type: inline-size; }
+.studio-input-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); gap: 12px; align-items: stretch; margin-top: 12px; }
+.studio-candidate-references > .studio-input-grid { grid-auto-rows: 1fr; }
+.studio-input-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--studio-line); border-radius: 9px; background: var(--studio-surface); }
+.studio-input-card > header { display: flex; flex-wrap: wrap; align-content: start; align-items: baseline; gap: 3px 9px; padding: 10px 12px; }
+.studio-input-card > header > strong { flex-basis: 100%; font-size: var(--studio-type-body); overflow-wrap: anywhere; }
+.studio-input-number { font-weight: 600; color: var(--studio-accent); font-size: var(--studio-type-meta); }
+.studio-input-card > header > small { color: var(--studio-secondary); font-size: var(--studio-type-caption); }
+.studio-input-card--image > header { min-height: 88px; }
+.studio-input-card--image > header > strong { display: -webkit-box; height: 3em; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.5; }
+.studio-candidate-references .studio-input-image { height: 136px; min-height: 136px; background: var(--studio-canvas); overflow: hidden; }
+.studio-candidate-references .studio-input-image .studio-image-button { height: 100%; border-radius: 0; border-left: 0; border-right: 0; }
+.studio-candidate-references .studio-input-image .studio-image-button img { height: 100%; width: 100%; object-fit: contain; }
+.studio-input-image .studio-media-empty { height: 100%; min-height: 0; padding: 10px; }
+.studio-input-body { display: flex; flex: 1; flex-direction: column; align-items: stretch; gap: 5px; padding: 10px 12px; }
+.studio-input-body .studio-note { margin: 0 !important; }
+.studio-input-state { margin: 0; font-size: var(--studio-type-ui); font-weight: 500; overflow-wrap: anywhere; }
+.studio-input-card--image .studio-input-state { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.studio-input-card--image .studio-input-body > .studio-text-button { margin-top: auto; }
+.studio-input-body .studio-text-button { justify-content: flex-start; text-align: left; flex-wrap: wrap; overflow-wrap: anywhere; }
+.studio-input-body .studio-record { margin: 0; }
+.studio-review-overview { padding: 18px; background: var(--studio-canvas); border: 1px solid var(--studio-line); border-radius: 9px; }
+.studio-review-overview.has-caveat { border-left: 3px solid var(--av-warning, #a86108); }
+.studio-review-overview .studio-review-verdict { display: block; font-size: var(--studio-type-lead); margin-bottom: 9px; }
+.studio-review-overview.has-caveat .studio-review-verdict { color: var(--av-warning, #a86108); }
+.studio-review-overview .studio-note { margin: 9px 0; }
+.studio-review-attention { margin-top: 14px; }
+.studio-review-attention h4 { font-size: var(--studio-type-ui); }
+.studio-review-attention ul { padding-left: 20px; margin: 7px 0 0; }
+.studio-review-attention li + li { margin-top: 7px; }
+.studio-review-details > .studio-record { margin: 0; padding: 9px 0; border-top: 1px solid var(--studio-line); }
+.studio-review-details > .studio-record > summary { color: var(--studio-ink); font-weight: 500; }
+.studio-review-issues article { padding: 12px 0; border-bottom: 1px solid var(--studio-line); min-width: 0; }
+.studio-review-issues article:last-child { border-bottom: 0; }
+.studio-review-issues article > header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.studio-review-issues article > header span { font-size: var(--studio-type-caption); color: var(--studio-secondary); }
+.studio-review-issues article > header [data-conclusion="confirmed"] { color: var(--av-danger, #c83949); }
+.studio-review-issues article > header [data-conclusion="dismissed"] { color: var(--studio-accent); }
+.studio-review-issues h4 { margin-top: 12px; font-size: var(--studio-type-meta); color: var(--studio-secondary); }
+.studio-evidence-select { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: var(--studio-type-ui); margin: 10px 0; }
+.studio-evidence-select select { max-width: 100%; min-width: 0; padding: 8px 10px; border: 1px solid var(--studio-line); background: var(--studio-surface); color: var(--studio-ink); border-radius: 6px; }
+.studio-evidence-pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 12px 0; font-size: var(--studio-type-meta); }
+.studio-evidence-pagination > span { color: var(--studio-secondary); font-variant-numeric: tabular-nums; }
+.studio-evidence-pagination button:disabled { opacity: .45; cursor: default; }
+.studio-review-download { margin-top: 12px; }
+.studio-review-details :focus-visible, .studio-candidate-references :focus-visible { outline: 2px solid var(--studio-accent); outline-offset: 2px; }
+.studio-timed-references { margin-top: 22px; }
+.studio-timed-references .studio-input-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.studio-timed-references .studio-playable-media[data-kind="video"] { height: 160px; }
+.studio-reference-version { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+.studio-reference-version select { min-width: 0; max-width: 100%; padding: 8px 10px; background: var(--studio-surface); color: var(--studio-text); border: 1px solid var(--studio-line); border-radius: 6px; }
+.studio-six-prompt { margin-top: 28px; }
+.studio-six-prompt details { border-top: 1px solid var(--studio-line); padding: 14px 0; }
+.studio-six-prompt summary { cursor: pointer; line-height: 1.7; overflow-wrap: anywhere; }
+.studio-six-prompt summary span { margin-right: 12px; color: var(--studio-secondary); }
+.studio-six-prompt summary small { display: block; color: var(--studio-secondary); margin-left: 30px; }
+.studio-six-prompt pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; font-size: var(--studio-type-ui); line-height: 1.8; padding: 14px 0; margin: 0; }
+.studio-input-body .studio-audio { max-width: 100%; }
+.studio-review-coverage {
+  padding: 12px 16px;
+  border-inline-start: 3px solid var(--color-warning, #a76c20);
+  background: var(--surface-muted, transparent);
+  overflow-wrap: anywhere;
+}
+.studio-review-coverage h4 { margin: 0 0 8px; }
+.studio-review-coverage p { margin: 0 0 8px; }
+.studio-review-coverage ul { margin: 0; padding-inline-start: 20px; }
+.studio-review-coverage li + li { margin-top: 8px; }
+.studio-review-coverage li span { display: block; opacity: .8; }

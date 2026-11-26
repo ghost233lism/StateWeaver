@@ -1,0 +1,36 @@
+{
+  "version": "agentvideo-api-registry-v1",
+  "services": [
+    {
+      "id": "stateweaver-text",
+      "label": "Text and review",
+      "kind": "text",
+      "protocol": "native-responses-v1",
+      "base_url": "https://text.example.invalid/v1",
+      "credential_ref": "STATEWEAVER_TEXT_API_KEY",
+      "models": ["writer-model", "director-model"]
+    },
+    {
+      "id": "stateweaver-image",
+      "label": "Image generation",
+      "kind": "image",
+      "protocol": "images-json-v1",
+      "base_url": "https://images.example.invalid/v1",
+      "credential_ref": "STATEWEAVER_IMAGE_API_KEY",
+      "models": ["image-model"]
+    },
+    {
+      "id": "stateweaver-video",
+      "label": "H3 video",
+      "kind": "video",
+      "protocol": "h3-ref2va-v1",
+      "base_url": "https://h3.example.invalid",
+      "credential_ref": "STATEWEAVER_VIDEO_API_KEY",
+      "models": ["MiniMax-H3-Sol"],
+      "capacity": 1,
+      "capabilities": {
+        "shared_media_root": "/path/to/shared-media"
+      }
+    }
+  ]
+}

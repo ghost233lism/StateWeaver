@@ -1,0 +1,28 @@
+.studio-markdown { min-width: 0; overflow-wrap: anywhere; line-height: 1.8; }
+.studio-root .studio-markdown > :first-child { margin-top: 0; }
+.studio-root .studio-markdown > :last-child { margin-bottom: 0; }
+.studio-markdown :is(p, ul, ol, blockquote, pre, .studio-markdown-table) { margin: 0 0 1em; }
+.studio-root .studio-markdown :is(h1, h2, h3, h4, h5, h6) { margin: 1.6em 0 .65em; line-height: 1.45; font-weight: 650; }
+.studio-root .studio-markdown h1 { font-size: 1.65em; }
+.studio-root .studio-markdown h2 { font-size: 1.4em; }
+.studio-root .studio-markdown h3 { font-size: 1.2em; }
+.studio-root .studio-markdown :is(h4, h5, h6) { font-size: 1em; }
+.studio-markdown :is(ul, ol) { padding-left: 1.6em; }
+.studio-markdown li { margin: .25em 0; padding-left: .15em; }
+.studio-markdown li > :last-child { margin-bottom: 0; }
+.studio-markdown li > :is(ul, ol) { margin-top: .35em; }
+.studio-markdown .contains-task-list { list-style: none; padding-left: .2em; }
+.studio-markdown .task-list-item input { margin-right: .6em; accent-color: var(--studio-accent, #5965e8); }
+.studio-markdown blockquote { padding: .2em 0 .2em 1.15em; margin-left: 0; border-left: 3px solid var(--studio-line, #d7dee8); color: var(--studio-secondary, #667085); }
+.studio-markdown blockquote > :last-child { margin-bottom: 0; }
+.studio-markdown a { color: var(--studio-accent, #5965e8); text-decoration: underline; text-underline-offset: .2em; }
+.studio-markdown a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.studio-markdown pre { max-width: 100%; overflow: auto; padding: 14px 16px; border-radius: 5px; background: var(--studio-canvas, #f3f5f8); border: 1px solid var(--studio-line, #d7dee8); white-space: pre; line-height: 1.65; }
+.studio-markdown code { font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace; font-size: .94em; }
+.studio-markdown :not(pre) > code { padding: .12em .3em; background: var(--studio-canvas, #f3f5f8); border-radius: 3px; }
+.studio-markdown .studio-markdown-table { max-width: 100%; overflow-x: auto; }
+.studio-markdown table { width: 100%; border-collapse: collapse; font-size: 1em; }
+.studio-markdown :is(th, td) { padding: .55em .75em; border: 1px solid var(--studio-line, #d7dee8); vertical-align: top; min-width: 5em; }
+.studio-markdown th { background: var(--studio-canvas, #f3f5f8); font-weight: 600; }
+.studio-markdown hr { margin: 1.5em 0; border: 0; border-top: 1px solid var(--studio-line, #d7dee8); }
+.studio-markdown img { display: block; max-width: 100%; height: auto; border-radius: 4px; }
